@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns = [
     path('index', views.index, name="index"),
-    path('', views.NlpValidationView.as_view(), name="nlp"),
+    path('', views.NLPView.as_view(), name="nlp"),
 ]

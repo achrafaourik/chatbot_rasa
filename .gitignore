@@ -166,5 +166,6 @@ app/.rasa/
 app/rasa.db/
 app/rasa.db-shm/
 app/rasa.db-wal/
+app/results/
 
 

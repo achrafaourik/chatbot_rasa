@@ -8,6 +8,7 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - hello_world
 
 responses:
   utter_greet:
@@ -28,6 +29,13 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+
+
+actions:
+  - action_hello_world
+
+forms: {}
+e2e_actions: []
 
 session_config:
   session_expiration_time: 60
