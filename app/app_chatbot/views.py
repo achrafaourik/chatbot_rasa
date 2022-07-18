@@ -17,5 +17,5 @@ class NLPView(APIView):
         message = data['message'].strip(' ')
         r = requests.post('http://localhost:5005/webhooks/rest/webhook', json=data)
         res = json.loads(r.text)
-        return Response([res])
+        return Response(res)
 

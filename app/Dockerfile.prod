@@ -19,9 +19,9 @@ RUN apt-get update \
 
 # lint
 RUN pip install --upgrade pip
-RUN pip install flake8==3.9.2
+#RUN pip install flake8==3.9.2
 COPY . .
-RUN flake8 --ignore=E501,F401 .
+#RUN flake8 --ignore=E501,F401 .
 
 # install dependencies
 RUN pip install --upgrade pip
@@ -55,6 +55,7 @@ RUN apt-get update \
 
 COPY --from=builder /usr/src/app/wheels /wheels
 COPY --from=builder /usr/src/app/requirements.txt .
+RUN pip install --upgrade pip
 RUN pip install --no-cache /wheels/*
 
 # copy entrypoint.prod.sh
