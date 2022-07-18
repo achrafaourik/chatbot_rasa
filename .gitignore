@@ -72,8 +72,8 @@ pytestdebug.log
 # Django stuff:
 *.log
 local_settings.py
-db.sqlite3
-db.sqlite3-journal
+app/db.sqlite3
+app/db.sqlite3-journal
 
 # Flask stuff:
 instance/
@@ -160,8 +160,11 @@ Thumbs.db
 # csv files
 *.csv
 
-# rasa models
+# rasa
 app/models/
-
+app/.rasa/
+app/rasa.db/
+app/rasa.db-shm/
+app/rasa.db-wal/
 
 
