@@ -160,5 +160,8 @@ Thumbs.db
 # csv files
 *.csv
 
+# rasa models
+app/models/
+
 
 
